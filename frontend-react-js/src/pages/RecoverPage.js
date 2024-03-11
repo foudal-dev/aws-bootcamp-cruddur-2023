@@ -29,6 +29,7 @@ export default function RecoverPage() {
       .then((data) => setFormState('success'))
       .catch((err) => setErrors(err.message) );
     } else {
+      // eslint-disable-next-line no-undef
       setCognitoErrors('Passwords do not match')
     }
     return false
