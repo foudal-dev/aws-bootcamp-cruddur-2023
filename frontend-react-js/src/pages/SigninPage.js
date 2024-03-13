@@ -4,7 +4,11 @@ import {ReactComponent as Logo} from '../components/svg/logo.svg';
 import { Link } from "react-router-dom";
 
 // [TODO] Authenication
+<<<<<<< HEAD
 import { Auth } from 'aws-amplify';
+=======
+import Cookies from 'js-cookie'
+>>>>>>> week1
 
 export default function SigninPage() {
 
@@ -13,6 +17,7 @@ export default function SigninPage() {
   const [errors, setErrors] = React.useState('');
 
   const onsubmit = async (event) => {
+<<<<<<< HEAD
     setErrors('')
     event.preventDefault();
     Auth.signIn(email, password)
@@ -27,6 +32,17 @@ export default function SigninPage() {
       }
       setErrors(error.message)
     });
+=======
+    event.preventDefault();
+    setErrors('')
+    console.log('onsubmit')
+    if (Cookies.get('user.email') === email && Cookies.get('user.password') === password){
+      Cookies.set('user.logged_in', true)
+      window.location.href = "/"
+    } else {
+      setErrors("Email and password is incorrect or account doesn't exist")
+    }
+>>>>>>> week1
     return false
   }
 
