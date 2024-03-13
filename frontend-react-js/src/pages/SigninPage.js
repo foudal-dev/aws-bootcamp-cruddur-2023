@@ -4,11 +4,7 @@ import {ReactComponent as Logo} from '../components/svg/logo.svg';
 import { Link } from "react-router-dom";
 
 // [TODO] Authenication
-<<<<<<< HEAD
-import { Auth } from 'aws-amplify';
-=======
 import Cookies from 'js-cookie'
->>>>>>> week1
 
 export default function SigninPage() {
 
@@ -17,22 +13,6 @@ export default function SigninPage() {
   const [errors, setErrors] = React.useState('');
 
   const onsubmit = async (event) => {
-<<<<<<< HEAD
-    setErrors('')
-    event.preventDefault();
-    Auth.signIn(email, password)
-    .then(user => {
-      console.log('user',user)
-      localStorage.setItem("access_token", user.signInUserSession.accessToken.jwtToken)
-      window.location.href = "/"
-    })
-    .catch(error => { 
-      if (error.code == 'UserNotConfirmedException') {
-        window.location.href = "/confirm"
-      }
-      setErrors(error.message)
-    });
-=======
     event.preventDefault();
     setErrors('')
     console.log('onsubmit')
@@ -42,7 +22,6 @@ export default function SigninPage() {
     } else {
       setErrors("Email and password is incorrect or account doesn't exist")
     }
->>>>>>> week1
     return false
   }
 
