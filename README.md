@@ -1,33 +1,17 @@
-# FREE AWS Cloud Project Bootcamp
-
-FRONTEND_URL="*" BACKEND_URL="*" docker run --rm -p 4567:4567 -it backend-flask
-
-docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
-```
-docker build -t  backend-flask ./backend-flask
-docker build -t  backend-flask:latest ./backend-flask
-```
-
-- Application: Cruddur
-- Cohort: 2023-A1
-
-This is the starting codebase that will be used in the FREE AWS Cloud Project Bootcamp 2023
+# AWS Cloud Project Bootcamp - Cruddur
 
 ![Cruddur Graphic](_docs/assets/cruddur-banner.jpg)
 
-![Cruddur Screenshot](_docs/assets/cruddur-screenshot.png)
-
-## Instructions
-
-At the start of the bootcamp you need to create a new Github Repository from this template.
+- Codebase: this repo was created from [this template](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023)
+- Cohort: 2023-A1
 
 ## Journaling Homework
 
-The `/journal` directory contains
+The `/journal` directory contains:
 
-- [ ] [Week 0](journal/week0.md)
-- [ ] [Week 1](journal/week1.md)
-- [ ] [Week 2](journal/week2.md)
+- [x] [Week 0](journal/week0.md)
+- [x] [Week 1](journal/week1.md)
+- [x] [Week 2](journal/week2.md)
 - [ ] [Week 3](journal/week3.md)
 - [ ] [Week 4](journal/week4.md)
 - [ ] [Week 5](journal/week5.md)
@@ -39,3 +23,9 @@ The `/journal` directory contains
 - [ ] [Week 11](journal/week11.md)
 - [ ] [Week 12](journal/week12.md)
 - [ ] [Week 13](journal/week13.md)
+
+## Instructions
+
+In the end of the bootcamp, the Cruddur application will look like:
+
+![Cruddur Screenshot](_docs/assets/cruddur-screenshot.png)
